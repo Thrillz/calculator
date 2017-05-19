@@ -1,0 +1,14 @@
+{
+  "name": "calculator-io",
+  "version": "1.0.0",
+  "description": "fcc advanced algorithm challenge solution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dad vader",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
