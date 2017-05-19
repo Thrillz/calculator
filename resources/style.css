@@ -1,0 +1,172 @@
+/*@import url("https://fonts.googleapis.com/css?family=Aldrich")*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Aldrich', "Anaheim", sans-serif;
+  margin: 0;
+  background-color: #818181;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  border: 10px solid goldenrod;
+  align-items: center;
+}
+
+.calculator .calc-title {
+  margin-top: 5px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  height: 410px;
+  width: 300px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #dfd8d0;
+  border: 2px solid #908b85;
+  border-radius: 20px;
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #89847e;
+}
+
+.display-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 90%;
+  height: 10vh;
+  border: 5px solid #b4b39d;
+  border-radius: 6px;
+  background-color: #c3c2ab;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.ce {
+  flex: 2;
+  font-size: 18px;
+}
+
+.enter-screen {
+  flex: 1;
+}
+
+.ce > p{
+  margin: 0;
+}
+
+.calculator .keyboard {
+  margin-top: 10px;
+}
+
+.keyboard {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.zero {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.zero > .buttons {
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  width: 90%;
+}
+
+.left-buttons {
+  display: flex;
+}
+
+.right-buttons {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+button {
+  border-radius: 8px;
+  border: none;
+  background-color: #3a3a3a;
+  margin: 1px 4px 10px 8px;
+  height: 40px;
+  width: 50px;
+  box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
+  color: white;
+}
+
+#equalButton {
+  height: 90px;
+}
+
+.zeroButton {
+  width: 110px;
+}
+
+.red {
+  font-size: 14px;
+  background-color: #a72d45;
+  box-shadow: 0px 3px 0px 0px #671c2a;
+}
+
+.orange {
+  font-size: 14px;
+  background-color: #e18a07;
+  box-shadow: 0px 3px 0px 0px #671c2a;
+}
+
+button,
+button:hover,
+button:active,
+button:visited {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+button:active {
+  transform: translate(0px, 3px);
+  box-shadow: none;
+}
+
+.footnote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Anaheim", sans-serif;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none !important;
+  outline: none !important;
+}
