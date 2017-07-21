@@ -34,8 +34,13 @@ $(document).ready(function() {
   }
 
   function update() {
-    curInput = input.join("");
-    $("#result").html(curInput);
+    if(input.length < 13) {
+      curInput = input.join("");
+      $("#result").html(curInput);
+    }
+    else {
+      $("#result").html("Too long");
+    }
   }
 
   function getTotal() {
@@ -55,6 +60,9 @@ $(document).ready(function() {
     else if (this.id === "deleteOne") {
       input.pop();
       update();
+      if (input.length <= 1) {
+        $("#result").html(0);
+      }
     }
     else if (this.id === "equalButton") {
       getTotal();
